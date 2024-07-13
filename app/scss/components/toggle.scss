@@ -2,10 +2,26 @@
 
 .toggle {
 	border: none;
+	&__wrapper {
+	// opacity: 0;
+	}
+
+	input[type="radio"] {
+
+	}
+
+	&__background {
+		background: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98.02%);
+	}
+
 	&__button {
 		border-radius: 50%;
 		width: rem(16);
 		height: rem(16);
 		background-color: var(--Toggle-BGC);
+	}
+
+	label {
+		
 	}
 }
