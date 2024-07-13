@@ -12,9 +12,9 @@
 	--YouTube: hsl(348, 97%, 39%);
 
 	//Dark Theme
-	//--Toggle-strt: hsl(210, 78%, 56%);
-	//--Toggle-End: hsl(146, 68%, 55%);
-	--Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+	--Toggle-strt: hsl(210, 78%, 56%);
+	--Toggle-End: hsl(146, 68%, 55%);
+	// --Toggle: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98,02%);
 
 	//Light Theme
 	--Toggle-BGC: hsl(230, 22%, 74%);
