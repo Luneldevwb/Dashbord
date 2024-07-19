@@ -6,7 +6,10 @@
 	grid-template-columns: repeat(3, 1fr);
 
 	&__wrapper {
+		position: relative;
 		height: rem(24);
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
 	}
 
 	input[type="radio"] {
@@ -14,7 +17,10 @@
 	}
 
 	&__background {
+		top: 0;
 		border-radius: rem(12);
+		width: 100%;
+		position: absolute;
 		height: 100%;
 		display: block;
 		background: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98.02%);
@@ -29,14 +35,18 @@
 
 	label {
 		&[for='dark'] {
+			grid-column: 1 / 2;
+			justify-self: end;
 		}
 
-		// &[for='system'] {
+		&[for='system'] {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			justify-self: center;
+		}
 
-		// }
-
-		// &[for='light'] {
-
-		// }
+		&[for='light'] {
+			grid-column: 3 / 4;
+		}
 	}
 }
