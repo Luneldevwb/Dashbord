@@ -1,6 +1,7 @@
 @use '../util/' as *; 
 
 .toggle {
+	position: relative;
 	border: none;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -11,9 +12,11 @@
 		height: rem(24);
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
+		margin: 0 auto;
 	}
 
 	input[type="radio"] {
+		margin: 0;
 		opacity: 0;
 	}
 
@@ -28,10 +31,13 @@
 	}
 
 	&__button {
+		position: absolute;
+		top:rem(3);
+		left: rem(3);
 		border-radius: 50%;
-		width: rem(16);
-		height: rem(16);
-		background-color: var(--Toggle-BGC);
+		width: rem(18);
+		height: rem(18);
+		background-color: var(--Dark-BG);
 	}
 
 	label {
