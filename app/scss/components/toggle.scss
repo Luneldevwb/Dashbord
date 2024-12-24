@@ -7,6 +7,22 @@
 	grid-template-columns: repeat(3, 1fr);
 	gap: rem(8);
 
+	label {
+		&[for='dark'] {
+			grid-column: 1 / 2;
+			justify-self: end;
+		}
+
+		&[for='system'] {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			justify-self: center;
+		}
+
+		&[for='light'] {
+			grid-column: 3 / 4;
+		}
+	}
 	&__wrapper {
 		position: relative;
 		height: rem(24);
@@ -38,22 +54,17 @@
 		width: rem(18);
 		height: rem(18);
 		background-color: var(--Dark-BG);
+		transition: all 159ms ease-in-out;
 	}
 
-	label {
-		&[for='dark'] {
-			grid-column: 1 / 2;
-			justify-self: end;
-		}
-
-		&[for='system'] {
-			grid-column: 2 / 3;
-			grid-row: 2 / 3;
-			justify-self: center;
-		}
-
-		&[for='light'] {
-			grid-column: 3 / 4;
-		}
+	#light:checked ~ .toggle__button {
+		left: calc(100% - 21px);
+		right: 3px;
 	}
+
+	#dark :checked ~ .toggle__button {
+		left: 3px;
+	}
+
+
 }
