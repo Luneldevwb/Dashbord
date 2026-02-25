@@ -65,8 +65,10 @@
 		right: 3px;
 	}
 
-	#dark :checked ~ .toggle__button {
-		left: 3px;
+	#system:checked ~ .toggle__button {
+		left: 50%;
+		right: auto;
+		transform: translate(-50%);
 	}
 
 
