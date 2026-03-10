@@ -4,7 +4,9 @@
 	background: var(--Dark-Card-BG);
 	color: var(--Dark-Text1);
 	width: 255px;
-    height: 216px;
+    // height: 216px;
+	text-align: center;
+	padding: rem(25);
 
 	&--facebook {
 
@@ -21,6 +23,12 @@
 	&--youtube {
 		
 	}  
+
+	&__plateform {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	&__icon {
 		&--facebook {
