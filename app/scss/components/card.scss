@@ -28,9 +28,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: rem(28);
 	}
 
 	&__icon {
+		margin-right: rem(8);
 		&--facebook {
 
 		}  
@@ -49,12 +51,18 @@
 	}
 
 	&__username {
-
+		font-size: rem(12);
+		font-weight: 700;
 	}
 
 	&__count {
+		color: var(--Light-BG);
+		font-weight: 700;
+		letter-spacing: rem(-2);
+		line-height: 1;
+		margin-bottom: rem(9);
 		&--big {
-
+			font-size: rem(56);
 		}
 
 		&--small {
@@ -63,7 +71,11 @@
 	}
 
 	&__label {
-
+		color: var(--Dark-Text1);
+		font-size: rem(12);
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: rem(6);
 	}
 
 	&__change {
