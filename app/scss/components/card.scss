@@ -7,9 +7,10 @@
     // height: 216px;
 	text-align: center;
 	padding: rem(25);
+	border-radius: rem(5);
 
 	&--facebook {
-
+		border-top: rem(4) solid var(--Facebook);
 	}  
 
 	&--twitter {
@@ -54,6 +55,9 @@
 		font-size: rem(12);
 		font-weight: 700;
 	}
+	&__followers {
+		margin-bottom: rem(25);
+	}
 
 	&__count {
 		color: var(--Light-BG);
@@ -79,12 +83,26 @@
 	}
 
 	&__change {
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+		font-size: rem(12);
+		font-weight: 700;
 		&--up {
-
+			// @extend .card__change;
+		    color: var(--LimeGreen);
 		}
 
 		&--down {
-
+			color: var(--BrightRed);
 		}
+
+		img {
+		margin-right: rem(4);
+		}
+	}
+
+	&__number {
+		// margin-left: rem(4);
 	}
 }
