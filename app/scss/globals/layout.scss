@@ -9,3 +9,9 @@
 	}
 }
 
+.card-grid {
+	@include breakpoint(medium) {
+		display: flex;
+		gap: rem(30);
+	}
+}
