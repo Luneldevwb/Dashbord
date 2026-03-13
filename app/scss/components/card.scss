@@ -1,9 +1,22 @@
 @use '../util/' as *; 
 
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: rem(30);
+	@include breakpoint(medium) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include breakpoint(large) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+}
+
 .card {
 	background: var(--Dark-Card-BG);
 	color: var(--Dark-Text1);
-	width: 255px;
+	// width: 255px;
     // height: 216px;
 	text-align: center;
 	padding: rem(25);
@@ -14,15 +27,15 @@
 	}  
 
 	&--twitter {
-		
+		border-top: rem(4) solid var(--Twitter);
 	}  
 
 	&--instagram {
-		
+		border-top: rem(4) solid var(--Instagram-strt);
 	}  
 
 	&--youtube {
-		
+		border-top: rem(4) solid var(--YouTube);
 	}  
 
 	&__plateform {
