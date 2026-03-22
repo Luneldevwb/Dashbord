@@ -23,7 +23,12 @@
 	border-radius: rem(5);
 	position: relative;
 	overflow: hidden;
+	transition: background 150ms ease-in-out;
 
+	&:hover {
+		background-color: var(--Dark-Card-hover);
+		border-radius: rem(10);
+	}
 	&--facebook {
 		border-top: rem(4) solid var(--Facebook);
 	}  
