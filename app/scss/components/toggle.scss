@@ -4,9 +4,9 @@
 	position: relative;
 	border: none;
 	display: grid;
-	grid-template-columns: 1fr rem(60) 1fr;
+	grid-template-columns: 1fr rem(48) 1fr;
 	gap: rem(8);
-	margin: 0;
+	margin: rem(6);
 
 	label {
 		font-size: rem(14);
@@ -32,7 +32,7 @@
 		height: rem(24);
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
-		margin: 0 auto;
+		// margin: 0 auto;
 	}
 
 	input[type="radio"] {
