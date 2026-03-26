@@ -69,10 +69,10 @@
 		transition: all 159ms ease-in-out;
 	}
 
-	// #light:checked ~ .toggle__button {
-	// 	left: calc(100% - 21px);
-	// 	right: 3px;
-	// }
+	#light:checked ~ .toggle__button {
+		left: calc(100% - 21px);
+		right: 3px;
+	}
 
 	// #system:checked ~ .toggle__button {
 	// 	left: 50%;
