@@ -24,7 +24,7 @@
 
 		&[for='dark'] {
 			line-height: rem(24);
-			margin-right: rem(5);
+			margin-right: rem(13);
 		}
 	}
 	&__wrapper {
@@ -71,7 +71,7 @@
 
 	#light:checked ~ .toggle__button {
 		left: calc(100% - 21px);
-		right: 3px;
+		right: rem(3);
 	}
 
 	// #system:checked ~ .toggle__button {
