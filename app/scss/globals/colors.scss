@@ -36,9 +36,13 @@
 	--Light-Card-BG: hsl(227, 47%, 96%);
 	--Light-Text1: hsl(230, 12%, 44%);
 	--Light-Text2: hsl(230, 17%, 14%);
+	--Light-Card-hover:hsl(228, 33%, 91%)
 
+	// Pour le chabgement des couleurs
 	--Background: var(--Light-BG);
 	--Text-Color: var(--Light-Text2);
+	--Text-Color2: var(--Light-Text1);
+	--Card-Bg: var(--Light-Card-BG);
 
 }
 
