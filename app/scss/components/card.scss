@@ -14,7 +14,7 @@
 }
 
 .card {
-	background: var(--Card-Bg);
+	background: var(--Dark-Card-BG);
 	color: var(--Dark-Text1);
 	// width: 255px;
     // height: 216px;
@@ -74,6 +74,7 @@
 	&__subtitle {
 		font-size: rem(14);
 		font-weight: 700;
+		color: var(--Text-Color2);
 
 	}
 
