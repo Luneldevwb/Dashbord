@@ -9,6 +9,7 @@ h1, h2, h3 {
 h1 {
 	margin-bottom: rem(3);
 	font-size: rem(24);
+	color: var(--Dark-Text2);
 	@include breakpoint(large) {
 		font-size: rem(28);
 	}
@@ -17,6 +18,13 @@ h1 {
 h2 {
 	font-size: rem(24);
 	margin-bottom: rem(24);
+	color: var(--Dark-Text2);
+}
+
+.attribution {
+	&__site, &__writer {
+	color: var(--Dark-Text2);
+	}
 }
 
 a, a:visited, a:active {
