@@ -58,7 +58,7 @@
 		position: absolute;
 		height: 100%;
 		display: block;
-		background: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98.02%);
+		background: var(--Toggle-BG);
 		pointer-events: none;
 	}
 
@@ -69,7 +69,7 @@
 		border-radius: 50%;
 		width: rem(18);
 		height: rem(18);
-		background-color: var(--Dark-BG);
+		background-color: var(--Toggle-Btn);
 		transition: all 159ms ease-in-out;
 	}
 
