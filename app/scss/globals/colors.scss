@@ -15,7 +15,7 @@
 	//Dark Theme
 	--Toggle-strt: hsl(210, 78%, 56%);
 	--Toggle-End: hsl(146, 68%, 55%);
-	// --Toggle: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98,02%);
+	--Toggle-Dark-BG: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98,02%);
 
 	//Light Theme
 	--Toggle-Light: hsl(230, 19%, 60%);
@@ -49,8 +49,10 @@
 	--Card-hover: (--Light-Card-hover);
 	--Toggle: var(--Toggle-Light);
 	--Toggle-BG: var(--Toggle-BG-Light);
+	// --Toggle-BG: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98.02%);
 	--Toggle-Btn: var(--Toggle-Btn-Light);
-
+	
+	
 	
 }
 
@@ -62,7 +64,7 @@
 		--Card-hover: var(--Dark-Card-hover);
 		--Text-Color2: var(--Dark-Text1);
 		--Toggle: var(--Light-BG);
-		--Toggle-BG: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98.02%);
+		--Toggle-Dark-BG: linear-gradient(225deg, var(--Toggle-strt) 0%, var(--Toggle-End) 98.02%);
 		--Toggle-Btn: var(--Dark-BG);
 	}
 
