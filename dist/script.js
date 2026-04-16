@@ -1,1 +1,1 @@
-"use strict";//# sourceMappingURL=script.js.map
+"use strict";var num="hello";alert(num);//# sourceMappingURL=script.js.map

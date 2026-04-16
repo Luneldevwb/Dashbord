@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","names":[],"sources":["script.js"],"mappings":"AAAA","ignoreList":[]}
+{"version":3,"sources":["script.js"],"names":["num","alert"],"mappings":"AAAA,aAAA,IAAIA,IAAM,QACVC,MAAMD","file":"script.js","sourcesContent":["var num = 'hello';\nalert(num);"]}
