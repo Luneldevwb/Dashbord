@@ -27,7 +27,7 @@
 	//Dark Theme
 	--Dark-BG: hsl(230, 17%, 14%);
 	--Dark-Top-BG: hsl(232, 19%, 15%);
-	--Dark-Card-BG: hsl(228, 28%, 20%);
+	--Dark-Card: hsl(228, 28%, 20%);
 	--Dark-Text1: hsl(228, 34%, 66%);
 	--Dark-Text2: hsl(0, 0%, 100%);
 	--Dark-Card-hover: hsl(228, 25%, 27%);
@@ -36,7 +36,7 @@
 	//Light Theme
 	--Light-BG: hsl(0, 0%, 100%);
 	--Light-Top-BG: hsl(225, 100%, 98%);
-	--Light-Card-BG: hsl(227, 47%, 96%);
+	--Light-Card: hsl(227, 47%, 96%);
 	--Light-Text1: hsl(230, 12%, 44%);
 	--Light-Text2: hsl(230, 17%, 14%);
 	--Light-Card-hover: hsl(228, 33%, 91%);
@@ -45,7 +45,7 @@
 	--Background: var(--Light-BG);
 	--Text-Color: var(--Light-Text2);
 	--Text-Color2: var(--Light-Text1);
-	--Card-Bg: var(--Light-Card-BG);
+	--Card-Bg: var(--Light-Card);
 	--Card-hover: (--Light-Card-hover);
 	--Toggle: var(--Toggle-Light);
 	--Toggle-BG: var(--Toggle-BG-Light);
@@ -60,7 +60,7 @@
 	:root {
 		--Background:var(--Dark-BG);
 	    --Text-Color: var(--Dark-Text2);
-		--Card-Bg: var(--Dark-Card-BG);
+		--Card-Bg: var(--Dark-Card);
 		--Card-hover: var(--Dark-Card-hover);
 		--Text-Color2: var(--Dark-Text1);
 		--Toggle: var(--Toggle-Light);
@@ -75,9 +75,9 @@
 body.light {
 	--Background:var(--Light-BG);
 	--Text-Color: var(--Light-Text2);
-	--Card-Bg: var(--Light-Card-BG);
-	--Card-hover: var(--Light-Card-hover);
 	--Text-Color2: var(--Light-Text1);
+	--Card-Bg: var(--Light-Card);
+	--Card-hover: var(--Light-Card-hover);
 	--Toggle: var(--Toggle-Light);
 	--Toggle-BG: var(--Toggle-BG-Light);
 	--Toggle-Btn: var(--Toggle-Btn-Light);
@@ -87,9 +87,9 @@ body.light {
 body.dark {
 	--Background:var(--Dark-BG);
 	--Text-Color: var(--Dark-Text2);
-	--Card-Bg: var(--Dark-Card-BG);
-	--Card-hover: var(--Dark-Card-hover);
 	--Text-Color2: var(--Dark-Text1);
+	--Card-Bg: var(--Dark-Card);
+	--Card-hover: var(--Dark-Card-hover);
 	--Toggle: var(--Light-BG);
 	--Toggle-Dark-BG: linear-gradient(225deg, 
 	 var(--Toggle-strt) 0%, 
