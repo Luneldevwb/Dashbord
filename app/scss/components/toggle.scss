@@ -9,7 +9,7 @@
 
 	label {
 		font-size: rem(14);
-		color: var(--Toggle-Light);
+		color: var(--Toggle);
 		// color: var(--Dark-Text2);
 		font-weight: 700;
 
@@ -58,7 +58,7 @@
 		position: absolute;
 		height: 100%;
 		display: block;
-		background: var(--Toggle-Dark-BG);
+		background: var(--Toggle-BG);
 		pointer-events: none;
 	}
 
@@ -69,7 +69,7 @@
 		border-radius: 50%;
 		width: rem(18);
 		height: rem(18);
-		background-color: var(--Dark-BG);
+		background-color: var(--Toggle-Btn);
 		transition: all 159ms ease-in-out;
 	}
 
