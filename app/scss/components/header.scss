@@ -1,3 +1,31 @@
+// @use '../util/' as *; 
+
+// .header {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin-top: rem(36);
+// 	@include breakpoint(medium) {
+// 		display: flex;
+// 		justify-content: space-between;
+// 	}
+// 	&__title {
+// 		width: 100%;
+// 		@include breakpoint(medium) {
+// 		 width: auto;
+// 		}
+// 	}
+
+// 	&__subtitle {
+// 		font-size: rem(14);
+// 		font-weight: 700;
+// 		color: var(--Text-Color2);
+// 	}
+
+// 	&__toggle {
+// 		margin-left: auto;
+// 	}
+// }
+
 @use '../util/' as *; 
 
 .header {
@@ -7,11 +35,19 @@
 	@include breakpoint(medium) {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
+
 	&__title {
 		width: 100%;
+		padding-bottom: rem(24);
+		border-bottom: 1px solid var(--Text-Color2);
+		margin-bottom: rem(24);
 		@include breakpoint(medium) {
-		 width: auto;
+			width: auto;
+			padding-bottom: 0;
+			border-bottom: none;
+			margin-bottom: 0;
 		}
 	}
 
@@ -19,9 +55,22 @@
 		font-size: rem(14);
 		font-weight: 700;
 		color: var(--Text-Color2);
+		@include breakpoint-down(small) {
+			font-size: rem(12);
+		}
+
 	}
 
 	&__toggle {
-		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		@include breakpoint(medium) {
+			width: auto;
+			flex-direction: column;
+			align-items: flex-end;
+		}
 	}
+
 }

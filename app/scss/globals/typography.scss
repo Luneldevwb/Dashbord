@@ -13,6 +13,9 @@ h1 {
 	@include breakpoint(large) {
 		font-size: rem(28);
 	}
+	@include breakpoint-down(small) {
+		font-size: rem(19);
+	}
 }
 
 h2 {
