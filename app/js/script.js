@@ -1,5 +1,5 @@
-const getColorMode = () => {
-	localStorage.getItem('ColorMode');
+const setColorMode = () => {
+	localStorage.getItem('ColorMode') == 'dark' ? setDarkMode() : setLightMode();
 };
 
 const setDarkMode = () => {
@@ -9,6 +9,8 @@ const setDarkMode = () => {
 const setLightMode = () => {
 	document.querySelector('body').classList = 'light';
 };
+
+setColorMode();
 
 const radioButtons = document.querySelectorAll('.toggle__wrapper input');
 for(let i = 0; i < radioButtons.length; i++){
